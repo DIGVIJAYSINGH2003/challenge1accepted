@@ -140,6 +140,7 @@ section{
    justify-content: center;
    align-items: center;
    color: rgb(248, 255, 251);
+    z-index: 999999;
 
 
 }
@@ -150,12 +151,17 @@ section{
     font-size: 4rem;
     margin-top: 30px;
     font-family: 'Rie',cursive;
+      z-index: 999999;
+
 }
 .aboutdef{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     font-family: 'Press Start 2P',cursive;
+     z-index: 999999;
+
 
 } 
