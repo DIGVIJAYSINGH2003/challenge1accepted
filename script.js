@@ -7,8 +7,9 @@ const button = document.querySelector("button");
 const infopage = document.querySelector(".hidden");
 const note = document.querySelector(".info");
 const heading = document.querySelector(".heading");
-//---------------------trial---------------------
-//-------------------------------------------------
+const closemedia =document.querySelector('.closemedia');
+//_______---------------------trial-----------------------______
+//_______-------------------------------------------------______
 // let randomint = (min, max) => {
 //   Math.floor(Math.random * (max - min + 1) + min);
 // };
@@ -24,6 +25,10 @@ const heading = document.querySelector(".heading");
 for (let i = 0; i < 8; i++) {
   audios[i] = new Audio(`music${i + 1}.mp3`);
 }
+closemedia.addEventListener("click",function(){
+  infopage.classList.remove('hover');
+   infopage.classList.add('hidden');
+});
 
 decode_button.addEventListener("click", function (e) {
   overlay.classList.add("decoded_page");
@@ -43,8 +48,8 @@ document.addEventListener("keydown", function (e) {
   }
 });
 // for playing music
-buttons.forEach(
-  addEventListener("click", function (e) {
+
+  buttons.forEach( addEventListener("click", function (e) {
     let otarget = e.target;
     otarget.classList.remove("bluecolor"); // worked after trying for atleast 2 hrs
     for (let i = 0; i < 8; i++) {
@@ -77,3 +82,5 @@ note.addEventListener("click", function (e) {
   infopage.classList.add("hover");
   infopage.classList.remove("hidden");
 });
+
+
