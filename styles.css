@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap');
 
@@ -140,7 +141,7 @@ section{
    justify-content: center;
    align-items: center;
    color: rgb(248, 255, 251);
-    z-index: 999999;
+   z-index: 999999;
 
 
 }
@@ -151,17 +152,86 @@ section{
     font-size: 4rem;
     margin-top: 30px;
     font-family: 'Rie',cursive;
-      z-index: 999999;
+    z-index: 999999;
 
 }
 .aboutdef{
-    
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    font-size: 1.5rem;
+    font-size:  1.3rem;
     font-family: 'Press Start 2P',cursive;
-     z-index: 999999;
+    z-index: 999999;
+    line-height: 36px;
 
 
 } 
+.pressesc{
+    font-size: 2rem; 
+    color: greenyellow;
+}
+.closemedia{
+    display:none;
+    background-color: rgb(209, 223, 14);
+    color: rgb(7, 3, 3);
+    font-weight: bold;
+}
+@media screen and  (max-width : 918px) {
+    .about{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-top: 30px;
+    font-family: 'Rie',cursive;
+    z-index: -1;
+    color: greenyellow;
+    
+
+    }
+    .pressesc{
+        display: none;
+    }
+    .aboutdef{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size:  .81rem;
+        font-family: 'Press Start 2P',cursive;
+        z-index: 999999;
+        line-height: 20px;
+       
+        
+
+    }
+    .decode,.decoded_page{
+        
+        display: none;
+    }
+    
+    .btn{
+        font-size: 1.1rem;
+        height: 70px;
+        width:70px;
+        z-index: 999999 ;
+
+    }
+    .btn:hover{
+        transform: scale(1);
+    }
+    .closemedia{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .second{
+        width:100vw;
+        height:40px;
+        
+    }
+    .frst{
+        height: 100px;
+    }
+}
